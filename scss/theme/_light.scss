@@ -1,50 +1,51 @@
 @use "../abstracts";
 
-:root {
-  --text-color: #1a162e;
-  --icon-color: brightness(0) saturate(100%) invert(8%) sepia(12%) saturate(3375%) hue-rotate(212deg) brightness(99%)
-    contrast(96%);
+html {
+    --text-color: #1a162e;
+    --icon-color: brightness(0) saturate(100%) invert(8%) sepia(10%) saturate(4042%) hue-rotate(212deg) brightness(90%)
+        contrast(95%);
 
-  --body--bg: #f6f6f6;
-  --header-bg-color: #eee;
-  --top-act-group-bg-color: #fff;
-  --top-act-group-shadow: rgba(237, 237, 246, 0.2);
-  --top-act-group-avatar-shadow: rgba(0, 0, 0, 0.08);
-  --top-act-group-separate: #ededf6;
+    --body-bg: #f6f6f6;
+    --header-bg-color: #eee;
+    --footer-bg-color: var(--header-bg-color);
 
-  @include abstracts.screen(lg) {
-    --header-bg-color: #fff;
-    --header-shadow-color: rgba(237, 237, 246, 0.2);
-  }
+    --top-act-group-bg-color: #fff;
+    --top-act-group-shadow: rgba(237, 237, 246, 0.2);
+    --top-act-group-separate: #ededf6;
 
-  // Dropdown
-  --dropdown-bg-color: #fff;
-  --dropdown-shadow-color: rgba(200, 200, 200, 0.4);
-  --top-menu-border-color: #d2d1d6;
+    @include abstracts.screen(lg) {
+        --header-bg-color: #fff;
+        --header-shadow-color: rgba(237, 237, 246, 0.2);
+    }
 
-  // Sidebar
-  --sidebar-bg: #fff;
-  --sidebar-shadow: rgba(200, 200, 200, 0.4);
+    // Dropdown
+    --dropdown-bg-color: #fff;
+    --dropdown-shadow-color: rgba(200, 200, 200, 0.4);
+    --top-menu-border-color: #d2d1d6;
 
-  // Category item
-  --cate-item-bg: #eee;
-  --cate-item-thumb-bg: #fff;
-  --cate-item-title-color: #000;
+    // Sidebar
+    --sidebar-bg: #fff;
+    --sidebar-shadow: rgba(200, 200, 200, 0.4);
 
-  @include abstracts.screen(md) {
-    --cate-item-bg: #fff;
-  }
+    // Category item
+    --cate-item-bg: #eee;
+    --cate-item-thumb-bg: #fff;
+    --cate-item-title-color: #000;
 
-  // Buttons
-  --filter-btn-color: #6c6c72;
-  --filter-btn-bg: #fff;
+    @include abstracts.screen(md) {
+        --cate-item-bg: #fff;
+    }
 
-  // Product card
-  --product-card-bg: #fff;
-  --product-card-shadow: rgba(237, 237, 246, 0.2);
+    // Buttons
+    --filter-btn-color: #6c6c72;
+    --filter-btn-bg: #fff;
 
-  // Filter form
-  --filter-form-bg: #fff;
-  --filter-form-shadow: rgba(200, 200, 200, 0.4);
-  --filter-form-tag-bg: #f8f8fb;
+    // Product card
+    --product-card-bg: #fff;
+    --product-card-shadow: rgba(237, 237, 246, 0.2);
+
+    // Filter form
+    --filter-form-bg: #fff;
+    --filter-form-shadow: rgba(200, 200, 200, 0.4);
+    --filter-form-tag-bg: #f8f8fb;
 }
